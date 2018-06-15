@@ -22,6 +22,6 @@ from links.views import LinkListView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', LinkListView.as_view(), name='home'),
-   # url(r'^login/$', login, {"template_name":"login.html"}, name="login"),
-   # url(r'^logout/$', logout_then_login, name="logout"),
+    url(r'^login/$', login, {"template_name":"login.html"}, name="login"),
+    url(r'^logout/$', logout_then_login, name="logout"),
 ]
